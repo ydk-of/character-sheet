@@ -1,0 +1,39 @@
+name: Изменение листа персонажа
+about: Задача для агентного процесса
+labels: []
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Цель
+      description: Что должно измениться для игрока?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Критерии приёмки
+      placeholder: Что должно быть видно и работать после выполнения?
+    validations:
+      required: true
+  - type: dropdown
+    id: role
+    attributes:
+      label: Ответственная роль
+      options:
+        - Orchestrator
+        - Rules Analyst
+        - UX Designer
+        - Rules Engineer
+        - Frontend Engineer
+        - QA Engineer
+        - Release Engineer
+  - type: textarea
+    id: source
+    attributes:
+      label: Источник правил и ограничения
+      description: Ссылки на утверждённые источники; если правил нет, отметить RULES-REVIEW REQUIRED.
+  - type: textarea
+    id: checks
+    attributes:
+      label: Проверки и сценарий предпросмотра
