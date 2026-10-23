@@ -26,3 +26,11 @@
  .stats .stat-table tbody th{font-size:.56rem}
  .stats .stat-table input{min-height:26px;font-size:.64rem}
 }
+
+/* The source template has two rows of six Astral Touch cells. */
+.astral-touch{min-width:0;display:flex;flex-direction:column;gap:6px}
+.astral-touch>strong{font-size:.84rem;font-weight:600}
+.astral-touch-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:4px;min-width:0}
+.astral-touch-grid span{min-width:0}
+.astral-touch-grid input{min-width:0;width:100%;padding:4px 2px;text-align:center}
+@media(max-width:680px){.astral-touch-grid{gap:3px}}
